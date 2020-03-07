@@ -1,1 +1,19 @@
-<p>home works!</p>
+<!-- <div class="card" style="width: 18rem;">
+    <img src="{{books.portada}}" class="card-img-top img-fluid">
+    <div class="card-body">
+        <h5 class="card-title">{{books.titulo}}</h5>
+        <p class="card-text">{{books.descripcion}}</p>
+        <a href="{{books.link_amazon}}" class="btn btn-primary">Comprar</a>
+    </div>
+</div> -->
+
+<div class="container-fluid">
+    <div *ngFor="let book of booksList" class="card d-flex" style="width: 18rem;">
+        <img src="{{book.portada}}" class="card-img-top img-fluid">
+        <div class="card-body">
+            <h5 class="card-title">{{book.titulo}}</h5>
+            <p class="card-text">{{book.descripcion}}</p>
+            <a href="{{book.link_amazon}}" class="btn btn-primary">Comprar</a>
+        </div>
+    </div>
+</div>
